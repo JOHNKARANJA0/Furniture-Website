@@ -9,11 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
   const loginForm = document.getElementById("login_form");
-  const loadingIndicator = document.getElementById("loading");
 
   loginForm.addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent default form submission
-    loadingIndicator.style.display = "block";
 
     // Replace with your validation logic (e.g., sending data to server)
     const username = document.getElementById("username").value;
@@ -21,10 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (username === "admin" && password === "admin") {
       // Example validation
-      window.location.href = "main.html"; // Redirect to success page
+      window.location.href = "main.html"; // Redirect to main page
     } else {
       alert("Invalid login credentials!");
     }
-    loadingIndicator.style.display = "none";
   });
 });
