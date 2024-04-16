@@ -1,0 +1,83 @@
+.topnav {
+    background-color: #FFF5EE;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    color: #8D5E2F;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #EABF7C;
+    color: #492D25;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #EABF7C;
+    color: #492D25;
+  }
+  
+  .topnav button{
+    margin: 5px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  /* STYLING THE CARD*/
+  
+  /*
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .card-body {
+    padding: 2px 16px;
+  }
+  */
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for multiple lines if needed */
+    gap: 10px; /* Add spacing between cards */
+  }
+  
+  .card {
+    width: 250px; /* Adjust width as needed */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex; /* Make card content a flexbox too */
+    flex-direction: column; /* Arrange content vertically */
+  }
+  
+  .card img {
+    /*aspect-ratio: 25/30; /* Adjust aspect ratio based on image dimensions */
+    /*object-fit: cover; /* Crop image to fit aspect ratio */
+    width: 100%; /* Ensure image fills the card width */
+    transition: transform 0.2s ease-in-out;
+  }
+  .card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .card-content {
+    flex: 1; /* Allow content to fill remaining space */
+    margin-top: auto;
+  }
