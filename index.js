@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const loadingIndicator = document.querySelector(".lds-dual-ring");
+  const mainContent = document.getElementById("main-content");
+
+  setTimeout(function() {
+    loadingIndicator.style.display = "none";
+    mainContent.style.display = "block";
+  }, 3000);
+
   // Get the modal
   let modal = document.getElementById("id01");
 

@@ -1,3 +1,36 @@
+/*Adding the loading effect*/
+
+.lds-dual-ring,
+.lds-dual-ring:after {
+  box-sizing: border-box;
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6.4px solid currentColor;
+  border-color: currentColor transparent currentColor transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*styling the body and data*/
 body {
   margin: auto;
   border-radius: 5px;
@@ -10,7 +43,7 @@ body {
 }
 
 button {
-  background-color: #492D25;
+  background-color: #492d25;
   color: white;
   padding: 14px 20px;
   margin: 5px;
@@ -124,14 +157,14 @@ span.psw {
 /* STYLING FOR THE MAIN PAGE*/
 
 .topnav {
-  background-color: #FFF5EE;
+  background-color: #fff5ee;
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: right;
-  color: #8D5E2F;
+  color: #8d5e2f;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -140,17 +173,17 @@ span.psw {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #EABF7C;
-  color: #492D25;
+  background-color: #eabf7c;
+  color: #492d25;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #EABF7C;
-  color: #492D25;
+  background-color: #eabf7c;
+  color: #492d25;
 }
 
-.topnav button{
+.topnav button {
   margin: 5px;
   padding: 15px 20px;
   border: none;

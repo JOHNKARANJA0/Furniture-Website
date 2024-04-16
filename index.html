@@ -13,69 +13,76 @@
     <script src="index.js"></script>
   </head>
   <body>
-    <div class="topnav">
-      <button onclick="document.getElementById('id01').style.display='block'">
-        Login
-      </button>
-      <a href="#">About</a>
-      <a href="MAILTO: jonniekaras@gmail.com">Contact Me</a>
-      <a href="#">Products</a>
-      <a href="#">Shop</a>
-    </div>
-    <!-- Button to open the modal login form -->
+    <div class="lds-dual-ring"></div>
+    <div id="main-content">
+      <div class="topnav">
+        <button onclick="document.getElementById('id01').style.display='block'">
+          Login
+        </button>
+        <a href="#">About</a>
+        <a href="MAILTO: jonniekaras@gmail.com">Contact Me</a>
+        <a href="#">Products</a>
+        <a href="#">Shop</a>
+      </div>
+      <!-- Button to open the modal login form -->
 
-    <!-- The Modal -->
-    <div id="id01" class="modal">
-      <span
-        onclick="document.getElementById('id01').style.display='none'"
-        class="close"
-        title="Close Modal"
-        >&times;</span
-      >
+      <!-- The Modal -->
+      <div id="id01" class="modal">
+        <span
+          onclick="document.getElementById('id01').style.display='none'"
+          class="close"
+          title="Close Modal"
+          >&times;</span
+        >
 
-      <!-- Modal Content -->
-      <form id= "login_form" class="modal_content animate" action="/action_page.php">
-        <div class="imgcontainer">
-          <img src="img/download.jpeg" alt="Avatar" class="avatar" />
-        </div>
+        <!-- Modal Content -->
+        <form
+          id="login_form"
+          class="modal_content animate"
+          action="/action_page.php"
+        >
+          <div class="imgcontainer">
+            <img src="img/download.jpeg" alt="Avatar" class="avatar" />
+          </div>
 
-        <div class="container">
-          <label for="uname"><b>Username</b></label>
-          <input
-            id="username"
-            type="text"
-            placeholder="Enter Username"
-            name="uname"
-            required
-          />
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input
+              id="username"
+              type="text"
+              placeholder="Enter Username"
+              name="uname"
+              required
+            />
 
-          <label for="psw"><b>Password</b></label>
-          <input
-            id="password"
-            type="password"
-            placeholder="Enter Password"
-            name="psw"
-            required
-          />
+            <label for="psw"><b>Password</b></label>
+            <input
+              id="password"
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              required
+            />
 
-          <button type="submit">Login</button>
-          <label>
-            Remember me
-            <input type="checkbox" checked="checked" name="remember" /> 
-          </label>
-        </div>
+            <button type="submit">Login</button>
+            <label>
+              Remember me
+              <input type="checkbox" checked="checked" name="remember" />
+            </label>
+          </div>
 
-        <div class="container" style="background-color: #f1f1f1">
-          <button
-            type="button"
-            onclick="document.getElementById('id01').style.display='none'"
-            class="cancelbtn"
-          >
-            Cancel
-          </button>
-          <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-      </form>
+          <div class="container" style="background-color: #f1f1f1">
+            <button
+              type="button"
+              onclick="document.getElementById('id01').style.display='none'"
+              class="cancelbtn"
+            >
+              Cancel
+            </button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
