@@ -13,10 +13,16 @@
     <script src="index.js"></script>
   </head>
   <body>
+    <div class="topnav">
+      <button onclick="document.getElementById('id01').style.display='block'">
+        Login
+      </button>
+      <a href="#">About</a>
+      <a href="MAILTO: jonniekaras@gmail.com">Contact Me</a>
+      <a href="#">Products</a>
+      <a href="#">Shop</a>
+    </div>
     <!-- Button to open the modal login form -->
-    <button onclick="document.getElementById('id01').style.display='block'">
-      Login
-    </button>
 
     <!-- The Modal -->
     <div id="id01" class="modal">
@@ -54,8 +60,8 @@
 
           <button type="submit">Login</button>
           <label>
-            <input type="checkbox" checked="checked" name="remember" /> Remember
-            me
+            Remember me
+            <input type="checkbox" checked="checked" name="remember" /> 
           </label>
         </div>
 
