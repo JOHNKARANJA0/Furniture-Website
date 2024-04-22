@@ -8,13 +8,17 @@
   display: inline-block;
   width: 80px;
   height: 80px;
+  color: #C04000;
 }
 .lds-dual-ring:after {
   content: " ";
   display: block;
   width: 64px;
   height: 64px;
-  margin: 8px;
+  margin-top: 50vh;
+  margin-bottom: 50vh;
+  margin-left: 50vw;
+  margin-right: 50vw;
   border-radius: 50%;
   border: 6.4px solid currentColor;
   border-color: currentColor transparent currentColor transparent;
@@ -40,6 +44,9 @@ body {
   background-position: center;
   backface-visibility: hidden;
   opacity: 0.89;
+}
+#main-content{
+  display: none;
 }
 
 button {
